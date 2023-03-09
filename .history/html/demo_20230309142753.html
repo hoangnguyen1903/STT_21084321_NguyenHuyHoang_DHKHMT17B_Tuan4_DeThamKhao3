@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo 3</title>
+    <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      .wrapper {
+        width: 960px;
+        height: 100%;
+      }
+
+      .header {
+        width: 960px;
+        height: 100px;
+        background-color: #294e79;
+        color: #fff;
+        display: flex;
+        position: relative;
+      }
+
+      .header > .header__left {
+        display: flex;
+        padding: 15px 20px;
+      }
+
+      .header > .header__left > img {
+        padding-right: 10px;
+      }
+
+      .header > .header__left > div > h2 {
+        font-size: 12px;
+      }
+
+      .header > .header__right {
+        padding-top: 15px;
+      }
+
+      .header > .header__bottom {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        display: flex;
+      }
+
+      .header > .header__bottom > li {
+        list-style: none;
+        margin-right: 5px;
+        background-color: #3d73b1;
+        padding: 5px 10px;
+      }
+
+      .header > .header__bottom > li:hover {
+        background-color: #fff;
+      }
+
+      .header > .header__bottom > li:hover > a {
+        color: #000;
+      }
+
+      .header > .header__bottom > li > a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__left">
+          <img src="../img/AnhLogo.PNG" alt="Logo" class="logo" />
+          <div>
+            <h1>FlowerBox 360</h1>
+            <h2>...to get your daily of luxury roses!</h2>
+          </div>
+        </div>
+        <ul class="header__bottom">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Promotion</a></li>
+          <li><a href="#">Gift Baskets</a></li>
+          <li><a href="#">Flower Services</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="header__right">
+          <input
+            type="text"
+            name="txt"
+            id="txt"
+            placeholder="Search the site"
+          />
+          <input type="button" value="GO" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__left">
+          <h2 class="content__left-top">Why Not Contact Us Today</h2>
+          <div class="content__left-bottom">
+            <div class="content__left-form">
+              <p>
+                For FlowerBox 360 shoppers, that means not only can you send
+                your friends and loved nes the highest quality flowers found on
+                online, but that you can do so at a great value.
+              </p>
+            </div>
+            <form action="">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="telephone">Telephone</label>
+              <input type="number" name="telephone" id="telephone" />
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
